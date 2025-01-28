@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-color: rgb(255, 255, 229);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   
+}
+
+.container {
+   position: relative;
+   width: 100%;
+   max-width: 1000px;
+   min-height: 1000px;
+   margin: 50px;
+   background-color: rgb(207, 112, 161);
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   box-shadow: 0 2px 18px rgb(231, 97, 166);
+}
+
+.container .left_Side {
+   position: relative;
+   background-color: rgb(177, 32, 107);
+   padding: 40px;
+}
+
+.profileText {
+   position: relative;
+   font-size: 18px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 2px;
+   border-bottom: 3px solid rgb(250, 219, 235);
+   letter-spacing: 1px;
+}
+
+.profileText .imgBox {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   border: 4px solid rgb(250, 219, 235);
+   overflow: hidden;
+}
+
+.profileText .imgBox img {
+   position: relative;
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.profileText h2 {
+   position: relative;
+   color: rgb(250, 219, 235);
+   margin: 20px 0;
+   font-size: 1.5em;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 600;
+   line-height: 1.5em;
+}
+
+.profileText h2 span {
+   position: relative;
+   color: rgb(250, 219, 235);
+   font-weight: 400;
+   font-size: 0.8em;
+   text-transform: none;
+}
+
+.contactInfo {
+   padding: 10px;
+}
+
+.title {
+   color: rgb(250, 219, 235);
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+}
+
+.contactInfo ul {
+   position: relative;
+   border-bottom: 2px solid rgb(250, 219, 235);
+}
+
+.contactInfo ul li {
+   position: relative;
+   list-style: none;
+   margin: 10px 0;
+   cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+   display: inline-block;
+   width: 30px;
+   font-size: 20px;
+   color: rgb(250, 219, 235);
+}
+
+.contactInfo ul li span {
+   color: rgb(250, 219, 235);
+   font-weight: 300;
+}
+
+/* Skill Bars */
+.skillbar {
+   background-color: #e5e5e5;
+   padding: 2px;
+   border-radius: 15px;
+   margin-bottom: 10px;
+   font-size: 14px;
+   color: #fff6fa;
+   font-weight: bold;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+   position: relative;
+}
+
+.skillbar::before {
+   content: attr(data-skill); 
+   display: inline-block;
+   padding: 5px 0 5px 10px;
+   border-radius: inherit;
+   animation: load 2s 0s;
+   -webkit-animation: load 2s 0s;
+   -moz-animation: load 2s 0s;
+   -o-animation: load 0s 0s;
+}
+
+@keyframes load {
+   from {
+      width: 90%;
+   }
+}
+
+.skillbar.learning::before 
+{
+   width: calc(30% - 10px);
+   background: #ff88bb;
+}
+
+.skillbar.basic::before 
+{
+   width: calc(50% - 10px);
+   background: #d53e94;
+}
+
+.skillbar.advanced::before 
+{
+   width: calc(80% - 10px);
+   background: #ea3a8c;
+}
+
+.skillbar.expert::before 
+{
+   width: calc(70% - 10px);
+   background: #ee5a98;
+}
+
+
+
+.container .right_Side 
+{
+   position: relative;
+   background-color: rgb(255, 240, 248);
+   padding: 40px;
+}
+
+.aboutMe h3
+{
+    position: relative;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(186, 15, 103);
+    text-shadow : 2px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.aboutMe p
+{
+    position: relative;
+    font-size: 17px;
+    color: rgb(126, 7, 69);
+    line-height: normal;
+    padding: 20px;
+    border-bottom: 3px solid rgb(169, 14, 94);
+
+}
+
+.aboutMe span
+{
+    color: rgb(186, 15, 103);
+    font-weight: 600;
+    
+}
+
+.education{
+    border-bottom: 3px solid rgb(169, 14, 94);
+
+}
+.education h3
+{
+    position: relative;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(186, 15, 103);
+    text-shadow : 2px 0px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+.education ul li
+{
+  
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #8d2254;
+    padding: 20px;
+
+}
+
+.achievements{
+    border-bottom: 3px solid rgb(169, 14, 94);
+
+}
+.achievements h3
+{
+    position: relative;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(186, 15, 103);
+    text-shadow : 2px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.achievements ul li
+{
+   padding-left: 20px;
+    color: #8d2254;
+    list-style: none;
+   
+}
+
+/* Color buttons styles */
+.color-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 20px;
+    border: #050103;
+  }
+  
+  .color-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .color-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .color-btn.pink1 {
+    background-color: rgb(177, 32, 107);
+    color: white;
+  }
+  
+  .color-btn.pink2 {
+    background-color: #a1094d;
+    color: white;
+  }
+  
+  .color-btn.pink3 {
+    background-color: #f54399;
+    color: white;
+  }
+  
+  /* pink 1 theme*/
+  .pink1-theme .container {
+    background-color: rgb(207, 112, 161);
+    color: rgb(250, 219, 235);
+  }
+  
+  .pink1-theme .left_Side {
+    background-color: rgb(177, 32, 107);
+    color: rgb(250, 219, 235);
+  }
+  
+  .pink1-theme .right_Side {
+    background-color: rgb(255, 240, 248);
+    color: rgb(126, 7, 69);
+  }
+  
+  /* pink 2 theme */
+  .pink2-theme .container {
+    background-color: #d143a6;
+    color: #fff9d9;
+    
+  }
+  
+  .pink2-theme .left_Side {
+    background-color: #a1094d;
+   
+  }
+  
+  .pink2-theme .right_Side {
+    background-color: #fff7de;
+    color: #edacd3;
+  }
+  
+  .pink2-theme .title .h3,
+  .pink2-theme .aboutMe p,
+  .pink2-theme .education ul li,
+  .pink2-theme .achievements ul li {
+    
+    color: #601332;
+  }
+  
+  /* pink3 theme styles */
+  .pink3-theme .container {
+    background-color: #f8b1e0;
+    color: white;
+  }
+  
+  .pink3-theme .left_Side {
+    background-color: #f54399;
+    color: white;
+  }
+  
+  .pink3-theme .right_Side {
+    background-color: #fbfbdb;
+    color: white;
+  }
+  
+  .pink3-theme .title h3,
+  .pink3-theme .aboutMe p,
+  .pink3-theme .education ul li,
+  .pink3-theme .achievements ul li {
+    color: #b40470;
+  }
+  
+  /* pink 1 theme skill bars */
+.default-theme .skillbar {
+    background-color: #e5e5e5;
+  }
+  
+  .default-theme .skillbar.learning::before {
+    background: #ff88bb;
+  }
+  
+  .default-theme .skillbar.basic::before {
+    background: #d53e94;
+  }
+  
+  .default-theme .skillbar.advanced::before {
+    background: #ea3a8c;
+  }
+  
+  .default-theme .skillbar.expert::before {
+    background: #ee5a98;
+  }
+  
+  /* pink 2 theme skill bars */
+  .pink2-theme .skillbar {
+    background-color: #f6fdcf;
+  }
+  
+  .pink2-theme .skillbar.learning::before {
+    background: #eb87aa;
+  }
+  
+  .pink2-theme .skillbar.basic::before {
+    background: #b92c60;
+  }
+  
+  .pink2-theme .skillbar.advanced::before {
+    background: #be2b5c;
+  }
+  
+  .pink2-theme .skillbar.expert::before {
+    background: #b5446b;
+  }
+  
+  /* pink 3 theme skill bars */
+  .pink3-theme .skillbar {
+    background-color: #fff4d8;
+  }
+  
+  .pink3-theme .skillbar.learning::before {
+    background: #fb7bcc;
+  }
+  
+  .pink3-theme .skillbar.basic::before {
+    background: #d81570;
+  }
+  
+  .pink3-theme .skillbar.advanced::before {
+    background: #e21d93;
+  }
+  
+  .pink3-theme .skillbar.expert::before {
+    background: #e11f8a;
+  }
+  
