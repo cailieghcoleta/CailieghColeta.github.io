@@ -288,7 +288,7 @@ body {
   }
   
   .color-btn.pink3 {
-    background-color: #f54399;
+    background-color: #f52a90;
     color: white;
   }
   
@@ -340,12 +340,12 @@ body {
   }
   
   .pink3-theme .left_Side {
-    background-color: #f54399;
+    background-color: #f52a90;
     color: white;
   }
   
   .pink3-theme .right_Side {
-    background-color: #fbfbdb;
+    background-color: #000000;
     color: white;
   }
   
@@ -353,7 +353,7 @@ body {
   .pink3-theme .aboutMe p,
   .pink3-theme .education ul li,
   .pink3-theme .achievements ul li {
-    color: #b40470;
+    color: #ffc6e9;
   }
   
   /* pink 1 theme skill bars */
