@@ -7,16 +7,15 @@ body {
     padding: 20px;
 }
 
-/* Button container on the left */
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between buttons */
-    margin-left: 30vh; /* Ensures buttons stay on the left */
+    gap: 15px; 
+    margin-left: 30vh; 
 }
 
 .buttons button {
-    width: 160px; /* Adjusted button width */
+    width: 160px; 
     height: 50px;
     font-size: 18px;
     font-weight: bold;
@@ -27,7 +26,6 @@ body {
     transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* Button Colors */
 .monday-btn { background-color: #fa9ec4; }
 .tuesday-btn { background-color: #ff9a68; }
 .wednesday-btn { background-color: #fff176; }
@@ -40,7 +38,7 @@ body {
     transform: scale(1.08);
     transition: box-shadow 0.1s ease-in-out;
 }
-/* Hover Effects: Different Shadow Colors */
+
 .monday-btn:hover { 
     background-color: #f06292; 
     color: white; 
@@ -83,15 +81,14 @@ body {
     box-shadow: 0 0 15px #9575cd; 
 }
 
-/* Flexbox container on the right */
 .flexbox-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 450px;
     height: 450px;
-    background-color: #ea0061; /* Change as needed */
+    background-color: #ea0061; 
     border: 12px solid rgb(27, 4, 4);
     border-radius: 10px;
-    margin-right: 20vh; /* Push to the right */
+    margin-right: 20vh; 
 }
