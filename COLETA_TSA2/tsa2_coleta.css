@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(255, 255, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Button container on the left */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between buttons */
+    margin-left: 30vh; /* Ensures buttons stay on the left */
+}
+
+.buttons button {
+    width: 160px; /* Adjusted button width */
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Button Colors */
+.monday-btn { background-color: #fa9ec4; }
+.tuesday-btn { background-color: #ff9a68; }
+.wednesday-btn { background-color: #fff176; }
+.thursday-btn { background-color: #cdfb7e; }
+.friday-btn { background-color: #bedeff; }
+.saturday-btn { background-color: #f7beff; }
+.sunday-btn { background-color: #d89efc; }
+
+.buttons button:hover {
+    transform: scale(1.08);
+    transition: box-shadow 0.1s ease-in-out;
+}
+/* Hover Effects: Different Shadow Colors */
+.monday-btn:hover { 
+    background-color: #f06292; 
+    color: white; 
+    box-shadow: 0 0 15px #f06292; 
+}
+
+.tuesday-btn:hover { 
+    background-color: #ff7043; 
+    color: white; 
+    box-shadow: 0 0 15px #ff7043; 
+}
+
+.wednesday-btn:hover { 
+    background-color: #ffd54f; 
+    color: rgb(255, 255, 255); 
+    box-shadow: 0 0 15px #ffd54f; 
+}
+
+.thursday-btn:hover { 
+    background-color: #aed581; 
+    color: rgb(255, 255, 255); 
+    box-shadow: 0 0 15px #aed581; 
+}
+
+.friday-btn:hover { 
+    background-color: #64b5f6; 
+    color: white; 
+    box-shadow: 0 0 15px #64b5f6; 
+}
+
+.saturday-btn:hover { 
+    background-color: #ba68c8; 
+    color: white; 
+    box-shadow: 0 0 15px #ba68c8; 
+}
+
+.sunday-btn:hover { 
+    background-color: #9575cd; 
+    color: white; 
+    box-shadow: 0 0 15px #9575cd; 
+}
+
+/* Flexbox container on the right */
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    background-color: #ea0061; /* Change as needed */
+    border: 12px solid rgb(27, 4, 4);
+    border-radius: 10px;
+    margin-right: 20vh; /* Push to the right */
+}
