@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hi bri <3 </title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 50px;
+            text-align: center; /* Center align the content */
+        }
+
+        h1 {
+            font-size: 36px; /* Larger font size for the header */
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #ffb6c1; /* Light pink color */
+            border: none; /* Remove default button border */
+        }
+
+        #displayText {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>hi bri !!</h1>
+
+    <p>click the buttons, baka sakaling mag click tayo <33 </p>
+
+    <!-- Buttons -->
+    <button onclick="displayText('HELLO ANG POGI MO CRUSH KITA HUHUHUHUHUHUHUHUHUHUHUHUHUHHUHUHUHU')">HELLO ITO MUNA</button>
+    <button onclick="displayText('wala ang pogi m p ren')">TAS ETO</button>
+    <button onclick="displayText('ANG POGI MO HELLO!?!?!?!?!?!! I often see u sa school and thought that you\'re really pogiiiiii wtf kaya simp lang talaga aq now xori jxhchsjhd')">TAS E2</button>
+    <button onclick="displayText('anw, im nahihiya magpakilala kaya d2 lang muna aq huhuhuhu I hope you\'re having a great day!!')">TAS E2 PA</button>
+    <button onclick="redirectToPage()">LAST E2 HEHEHEHE</button>
+
+    <!-- Displayed text will be shown here -->
+    <div id="displayText"></div>
+
+    <script>
+        // Function to display text when a button is clicked
+        function displayText(text) {
+            var displayDiv = document.getElementById('displayText');
+            displayDiv.innerText = text;
+        }
+
+        // Function to redirect to another HTML page
+        function redirectToPage() {
+            window.location.href = 'love letter.html'; // Change this to your actual HTML file
+        }
+    </script>
+
+    <h2> - liley </h2>
+
+</body>
+
+</html>
